@@ -25,7 +25,6 @@ print "$Name\n";
 
 if(1 == 1){
 
-    # This line of code will still execute even without the ; 
     print "This is conditional\n"; 
 }
 

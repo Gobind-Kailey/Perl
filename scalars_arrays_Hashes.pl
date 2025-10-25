@@ -21,7 +21,7 @@ push(@colors, "Yellow");  # Add an element to the end of the array
 pop(@colors); # Removes the last element from the array
 
 # print scalar @colors; # prints the number of elements in the array`
-print "\nMy String: ".scalar @colors ."\n"; # Concatenation example
+print "\nMy String: ".scalar @colors."\n"; # Concatenation example
 print "@colors\n"; # prints all elements in the array
 
 # Hashes(%) -- Unordered collection of key-value pairs

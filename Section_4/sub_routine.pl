@@ -6,10 +6,33 @@ use strict;
 use warnings; 
 use feature 'say'; 
 
-sub greet{
+greet("Gobind", "Kailey"); 
 
-    say "Welcome to Perl Programming"; 
+
+sub greet{
+    # With the underscore we are just getting the first data
+    my ($first_name, $last_name) = @_; 
+    say "Welcome to Perl Programming: $first_name, $last_name";
+    
 }
 
-great(); 
+sub add{
 
+    my ($num1, $num2) = @_; 
+    return $num1 + $num2; 
+}
+
+my $result = add(10, 20); 
+
+print "$result\n"; 
+
+
+sub subtract{
+
+    my $num1 = shift; 
+    my $num2 = shift || 0; 
+    return $num1 - $num2; 
+}
+
+my $result2 = subtract(20);
+print "$result2"; 

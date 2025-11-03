@@ -6,7 +6,7 @@ use warnings;
 use feature 'say'; 
 
 # fh --> filehandling   Also the statement below is used for READING FILE. 
-# open(my $fh, '<', 'input.txt') or die "Count not open file"; 
+# open(my $fh, '', 'input.txt') or die "Count not open file"; 
 
 
 # Reading line by line 
@@ -29,7 +29,12 @@ use feature 'say';
 # Writing to a file. 
 # Note that this overwrites everything we had before
 # use >> if you would like to append
-open(my $fh, '>>', 'input.txt') or die "Count not open file"; 
-print $fh "\nHello, Perl"; 
+# open(my $fh, '>>', 'input.txt') or die "Count not open file"; 
+# print $fh "\nHello, Perl"; 
 
-close($fh); 
+# close($fh); 
+
+
+
+# open(my $fh, '<' , "output.csv") or die "couldn't open"; 
+#     print $fh; 

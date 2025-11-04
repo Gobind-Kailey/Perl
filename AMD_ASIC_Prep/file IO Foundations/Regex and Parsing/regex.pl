@@ -29,4 +29,11 @@ while(my $line = <$fh>)
 }
 
 say "Smallest value = $minimum"; 
+close($fh); 
 
+open(my $writing, '>', 'worst_stack.txt') or die "Couldn't open file"; 
+
+    print $writing "Worst Slack: $minimum"; 
+
+
+close($writing); 

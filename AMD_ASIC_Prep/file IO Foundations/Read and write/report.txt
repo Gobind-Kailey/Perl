@@ -1,0 +1,3 @@
+Timing Report
+-------------
+Run completed successfully at <current time>
